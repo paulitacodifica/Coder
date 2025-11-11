@@ -208,40 +208,49 @@ footer p{
 /*Cuando la sección posee imagenes*/
 section ul li img {
     max-width: 100%;
-    height: auto;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block
-    margin 16px 0;
+    margin 16px auto 0 auto;
 }
 section ul li img:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
-section ul.con-imagenes {
+section ul.con-imagen {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 16px;
     list-style: none;
     padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-section ul.con-imagenes li {
+section ul.con-imagen li {
     background-color: #f8c889;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
 }
 /*Responsive para tablet con 2 columnas*/
 @media (min-width: 768px) {
-    section ul-con-imagenes {
+    section ul-con-imagen {
         grid-template-columns: repeat(2, 1fr);
+    }
+    section ul li img {
+        height: 180px;
     }
 }
 /*Imagenes sin listas*/
 section > img {
-    max-width: 100%;
+    max-width: 600px;
     height: auto;
+    width: 100%;
     border-radius: 10%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
