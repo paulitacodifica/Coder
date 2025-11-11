@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../access/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Perfumeria Kaili</title>
+</head>
+<body>
+    <header>
+    <h1>Perfumeria Kaili</h1>
+        <nav class="flex-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../pages/aromas.html">Aromas</a>
+                </li>
+                <li>
+                    <a href="../pages/marcas-recomendadas.html">Perfumes Recomendados</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <form action="/submit" method="post">
+            <section>
+            <label for="nombre y apellido">Nombre y Apellido</label>
+            <input type="text" name="nombre y Apellido" id="nombre y apellido">
+            </section>
+            <section>
+            <label for="email">Dirección de mail</label>
+            <input type="email" name="email" id="email">
+            </section>
+            <section>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+            </section>
+            <section>
+            <input type="submit" value="Enviar Comentarios">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Perfumeria Kaili. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
